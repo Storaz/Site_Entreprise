@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+          <title>JCDecaux</title>
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <a><img src="images/logo.png" class="head"></a>
+          
+</head>
+<body>
+	<header>
+		<br/><h1>JCDecaux</h1>
+	</header>
+	<nav>
+        <div id="menu"></div>
+            <ul>
+                <li><a href="présentation.html">Accueil</a></li>
+                <li><a href="projets.html">Nos Projets</a></li>
+                <li><a href="partenaires.html">Partenaires</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+	<section>
+	<article>
+		<h1>Contact</h1>
+            <form id="form" method="post" action="#">
+            	<fieldset>
+                    <legend>Informations personnelles</legend><br/>
+                    <p>Les cases en jaune doivent être obligatoirement remplies</p>
+                    <label for="prenom">Prenom</label> : <input type="text" name="prenom" id="prenom" placeholder="Votre prenom" size="30" maxlength="30" autofocus required/></br>
+                    <label for="nom">Nom</label>:<input type="text" name="nom" id="nom" placeholder="Votre nom" size="30" maxlength="30" required/></br>
+                    <label for="mail">Mail</label> : <input type="email" name="mail" id="mail" placeholder="Votre e-mail"/></br>
+                    <label for="pays">Votre Pays</label><br/>
+                    <select name="pays" id="pays">
+                        <optgroup label="Europe">
+                            <option value="France">France</option>
+                            <option value="Allemagne">Allemagne</option>
+                            <option value="Angleterre">Angleterre</option>
+                            <option value="Espagne">Espagne</option>
+                            <option value="Suisse">Suisse</option> 
+                            <option value="Belgique">Belgique</option>   
+                        </optgroup>
+                        <optgroup label="Autre">
+                            <option value="Amerique">Amerique</option>
+                            <option value="UK">UK</option>
+                            <option value="Canada">Canada</option>    
+                        </optgroup>
+                    </select><br/>
+                </fieldset>
+                <fieldset>
+                    <legend>Traitement de la demande</legend><br/>
+                    <label for="objet">Objet</label> : <input type="objet" name="objet" id="objet" required/></br>
+                    <label for="message">Message</label> : <textarea name="message" id="message" rows="10" cols="50" required></textarea></br></br>
+                    <input type="reset" name="reset" value="Effacer" style="background-color: #FFC0CB"/></br> <br>
+                    <input type="submit" name="submit" value="Envoyer" style="background-color: #FFC0CB"/></br>
+                </fieldset>
+            </form>
+    </article>
+	<aside>		
+	</aside>
+	<footer>
+	</footer>
+	</section>
+	</body>
+</html>
